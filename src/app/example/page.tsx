@@ -1,5 +1,5 @@
 const Example = () => {
-    return (<p>Hello World!</p>);
+    return (<p className="bg-primary">Hello World!</p>);
 };
 
 export default Example;
