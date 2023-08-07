@@ -1,10 +1,10 @@
 import TextReveal from "./text-reveal";
 
-const Example = () => {
+const LandingPage = () => {
 
     const backgroundImgArr = [
         'https://daisyui.com/images/stock/photo-1507358522600-9f71eß620c44e.jpg',
-        '/IMG_6243.jpg'
+        './milan.jpg'
     ];
 
     return (
@@ -21,4 +21,4 @@ const Example = () => {
     );
 };
 
-export default Example;
+export default LandingPage;

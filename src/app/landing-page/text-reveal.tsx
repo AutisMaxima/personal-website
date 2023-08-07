@@ -2,7 +2,13 @@
 
 import { motion } from "framer-motion";
 
-const TextReveal = ({ text, definedClass = ""}: { text: string, definedClass: string }) => {
+const TextReveal = ({ 
+    text, 
+    definedClass = ""
+}: { 
+    text: string, 
+    definedClass: string 
+}) => {
 
     // Sentence gives the instruction on the delay of the animation of each word
     const sentence = {
