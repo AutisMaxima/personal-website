@@ -38,7 +38,7 @@ const Dashboard = () => {
                 <h1>Hello There!</h1>
             </Hero>
             <Hero
-                definedClass="px-1 py-1 bg-gradient-to-br from-secondary from-10% to-base-100 to-90% h-[48rem]"
+                definedClass="px-1 lg:px-3 py-1 lg:py-3 bg-gradient-to-br from-secondary from-10% to-base-100 to-90% h-[48rem]"
             >
                 <Image
                     alt="some picture"
