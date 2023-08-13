@@ -34,10 +34,14 @@ const Dashboard = () => {
     return (
         <Fragment>
             <Hero imgurl="/studying-girl.webp">
-                <h1 className="text-gray-200">Hello There!</h1>
+                <h1 className="text-gray-200 text-4xl lg:text-8xl">Hello There!</h1>
+                <div className="flex-col">
+                    <p className="text-gray-200">Sentence 1</p>
+                    <p className="text-gray-200">Sentence 2</p> 
+                </div>
             </Hero>
             <Hero
-                definedClass="px-1 lg:px-3 py-1 lg:py-3 bg-gradient-to-br from-pink-600 from-10% to-base-100 to-90% h-[48rem]"
+                definedClass="px-1 md:px-3 lg:px-5 py-1 md:py-3 lg:py-5 bg-gradient-to-br from-pink-600 from-10% to-base-100 to-90% h-[48rem]"
             >
                 <Image
                     alt="some picture"
@@ -52,7 +56,7 @@ const Dashboard = () => {
                 </FadeInWhenVisible>
             </Hero>
             <Hero
-                definedClass="bg-gradient-to-bl from-teal-500 from-10% to-base-100 to-90% px-1 h-[48rem]"
+                definedClass="px-1 md:px-3 lg:px-5 py-1 md:py-3 lg:py-5 bg-gradient-to-bl from-teal-500 from-10% to-base-100 to-90% h-[48rem]"
             >
                 <FadeInWhenVisible>
                     <h1 className="text-5xl text-gray-200 font-bold">Maybe a bit about the university</h1>
@@ -68,7 +72,7 @@ const Dashboard = () => {
             </Hero>
             <Hero
                 flex="flex-col"
-                definedClass="bg-gradient-to-br from-cyan-400 from-10% to-info-content to-90% px-1 py-1 h-[48rem]"
+                definedClass="px-1 md:px-3 lg:px-5 py-1 md:py-3 lg:py-5 bg-gradient-to-br from-cyan-400 from-10% to-info-content to-90% h-[48rem]"
             >
                 <FadeInWhenVisible>
                     <h1 className="text-5xl text-gray-200 font-bold text-center">Where to begin?</h1>
