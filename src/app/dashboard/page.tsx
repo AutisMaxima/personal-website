@@ -2,9 +2,8 @@ import { Fragment } from "react";
 import FadeInWhenVisible from "@/components/animations/fadeInWhenVisible";
 
 import Carousel from "@/components/carousel/carousel";
-import Hero from "@/components/hero"
+import Hero from "@/components/hero";
 import Image from "next/image";
-import DaisyCard from "@/components/daisyCard/daisyCard"
 
 // Image array
 const imageArray = [
@@ -34,11 +33,11 @@ const imageArray = [
 const Dashboard = () => {
     return (
         <Fragment>
-            <Hero imgurl="./studying-girl.webp">
-                <h1>Hello There!</h1>
+            <Hero imgurl="/studying-girl.webp">
+                <h1 className="text-gray-200">Hello There!</h1>
             </Hero>
             <Hero
-                definedClass="px-1 lg:px-3 py-1 lg:py-3 bg-gradient-to-br from-secondary from-10% to-base-100 to-90% h-[48rem]"
+                definedClass="px-1 lg:px-3 py-1 lg:py-3 bg-gradient-to-br from-pink-600 from-10% to-base-100 to-90% h-[48rem]"
             >
                 <Image
                     alt="some picture"
@@ -48,16 +47,16 @@ const Dashboard = () => {
                     className="rounded-lg shadow-2xl"
                 />
                 <FadeInWhenVisible>
-                    <h1 className="text-5xl font-bold text-right">About</h1>
-                    <p className="py-6 text-right">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <h1 className="text-5xl text-gray-200 font-bold text-right">About</h1>
+                    <p className="py-6 text-right text-gray-200">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                 </FadeInWhenVisible>
             </Hero>
             <Hero
-                definedClass="bg-gradient-to-bl from-accent from-10% to-base-100 to-90% px-1 h-[48rem]"
+                definedClass="bg-gradient-to-bl from-teal-500 from-10% to-base-100 to-90% px-1 h-[48rem]"
             >
                 <FadeInWhenVisible>
-                    <h1 className="text-5xl font-bold">Maybe a bit about the university</h1>
-                    <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <h1 className="text-5xl text-gray-200 font-bold">Maybe a bit about the university</h1>
+                    <p className="py-6 text-gray-200">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                 </FadeInWhenVisible>
                 <Image
                     alt="some picture"
@@ -69,11 +68,11 @@ const Dashboard = () => {
             </Hero>
             <Hero
                 flex="flex-col"
-                definedClass="bg-gradient-to-br from-info from-10% to-info-content to-90% px-1 py-1 h-[48rem]"
+                definedClass="bg-gradient-to-br from-cyan-400 from-10% to-info-content to-90% px-1 py-1 h-[48rem]"
             >
                 <FadeInWhenVisible>
-                    <h1 className="text-5xl font-bold text-center">Where to begin?</h1>
-                    <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <h1 className="text-5xl text-gray-200 font-bold text-center">Where to begin?</h1>
+                    <p className="py-6 text-gray-200">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                 </FadeInWhenVisible>
                 <Carousel isLinked={true} height="h-96" carouselItems={imageArray} />
             </Hero>
