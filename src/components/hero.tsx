@@ -14,7 +14,7 @@ const Hero = ({
 
     // Use JS logic outside the return statement
 
-    let returnElement: JSX.Element = (
+    let returnElement: React.JSX.Element = (
         <div className={`hero ${definedClass}`}>
             <div className={`hero-content ${flex}`}>
                 {children}
