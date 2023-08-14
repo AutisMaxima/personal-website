@@ -11,23 +11,29 @@ const Hero = ({
     definedClass?: string,
     children: React.ReactNode
 }) => {
-    return (
-        <Fragment>
-            {!imgurl &&
-                <div className={`hero ${definedClass}`}>
-                    <div className={`hero-content ${flex}`}>
-                        {children}
-                    </div>
-                </div>}
-            {imgurl &&
-                <div style={{ backgroundImage: `url(${imgurl})` }} className={`hero min-h-screen ${definedClass}`}>
-                    <div className="hero-overlay bg-opacity-60"></div>
-                    <div className={`hero-content ${flex}`}>
-                        {children}
-                    </div>
-                </div>}
-        </Fragment>
+
+    // Use JS logic outside the return statement
+
+    let returnElement: JSX.Element = (
+        <div className={`hero ${definedClass}`}>
+            <div className={`hero-content ${flex}`}>
+                {children}
+            </div>
+        </div>
     );
+
+    if (imgurl) {
+        returnElement = (
+            <div style={{ backgroundImage: `url(${imgurl})` }} className={`hero min-h-screen ${definedClass}`}>
+                <div className="hero-overlay bg-opacity-60"></div>
+                <div className={`hero-content ${flex}`}>
+                    {children}
+                </div>
+            </div>
+        );
+    }
+
+    return returnElement;
 };
 
 export default Hero;
