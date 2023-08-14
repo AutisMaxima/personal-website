@@ -1,5 +1,3 @@
-import { Fragment } from "react";
-
 const Hero = ({
     imgurl,
     flex = "flex-col lg:flex-row",
