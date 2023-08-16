@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const FadeInWhenVisible = ({
-  definedClass = "",
+  className = "",
   children
 }: {
-  definedClass?: string
+  className?: string
   children: React.ReactNode
 }) => {
   return (
@@ -19,7 +19,7 @@ const FadeInWhenVisible = ({
         visible: { opacity: 1, scale: 1 },
         hidden: { opacity: 0, scale: 0.9 }
       }}
-      className={definedClass}
+      className={className}
     >
       {children}
     </motion.div>
