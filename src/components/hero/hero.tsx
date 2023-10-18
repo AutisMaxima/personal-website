@@ -1,10 +1,12 @@
 const Hero = ({
     imgurl,
+    background,
     flex = "flex-col lg:flex-row",
     className = "",
     children
 }: {
     imgurl?: string,
+    background?: JSX.Element
     flex?: string,
     className?: string,
     children: React.ReactNode
@@ -27,6 +29,17 @@ const Hero = ({
                 <div className={`hero-content ${flex}`}>
                     {children}
                 </div>
+            </div>
+        );
+    }
+    else if (background) {
+        returnElement = (
+            <div className={`hero min-h-screen ${className}`}>
+                {background}
+                    <div className="hero-overlay bg-opacity-60"></div>
+                    <div className={`hero-content ${flex}`}>
+                        {children}
+                    </div>
             </div>
         );
     }

@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { themeChange } from 'theme-change';
-import { HomeIcon } from '@heroicons/react/24/outline';
+import { HomeIcon, Cog6ToothIcon, PencilSquareIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -15,9 +15,26 @@ const Navbar = () => {
     return (
         <div className="navbar bg-base-200">
             <div className="flex-none">
-                <Link href="/" className="btn btn-square btn-ghost">
+                {/* <Link href="/" className="btn btn-square btn-ghost">
                     <HomeIcon className="w-6 h-6 text-base-content" />
-                </Link>
+                </Link> */}
+                <div className="dropdown">
+                    <label tabIndex={0} className="btn btn-ghost btn-circle">
+                        <HomeIcon className="w-6 h-6 text-base-content" />
+                    </label>
+                    <ul tabIndex={0} className="menu menu-sm lg:menu-md dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base-content">
+                        <li>
+                            <a>
+                                <span><Cog6ToothIcon className = "w-6 h-6 text-base-content"/></span><span>Projects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <span><PencilSquareIcon className = "w-6 h-6 text-base-content" /></span><span>Notes</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>                    
             </div>
             <div className="flex-1">
                 <a className="btn btn-ghost normal-case text-lg text-base-content font-bold">daisyUI</a>
