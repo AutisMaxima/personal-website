@@ -12,7 +12,7 @@ const Hero = ({
 
     // Use JS logic outside the return statement
 
-    let returnElement: React.JSX.Element = (
+    let returnElement = (
         <div className={`hero ${className}`}>
             <div className={`hero-content ${flex}`}>
                 {children}

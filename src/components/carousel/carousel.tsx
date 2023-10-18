@@ -1,6 +1,8 @@
 import CarouselItem from "./carouselItem";
 import CarouselLinkedItem from "./carouselLinkedItem";
 
+
+
 const Carousel = ({
     height = "h-96",
     isLinked = false,

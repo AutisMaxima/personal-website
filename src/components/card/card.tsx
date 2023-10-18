@@ -1,13 +1,14 @@
 import Image from "next/image";
 
-const DaisyCard = ({
-    key = 0,
+const Card = ({
+    key = Math.round(Math.random()*1000),
     title = "Some title",
     text = "Some text",
     imgSpecs,
-    buttonText
+    className,
+    children
 } : {
-    key: number,
+    key?: number,
     title: string,
     text: string,
     imgSpecs: {
@@ -16,30 +17,28 @@ const DaisyCard = ({
         width: number,
         height: number
     },
-    buttonText?: string,
+    className?: string,
+    children: React.ReactNode
 }) => {
     return (
-        <div key={key} className="card w-96 bg-base-100 shadow-xl">
+        <div key={key} className={`card flex-auto h-96 w-96 bg-base-100 shadow-xl text-base-content ${className}`}>
             <figure>
                 <Image
                     src={imgSpecs.src}
                     alt={imgSpecs.alt}
                     width={imgSpecs.width}
                     height={imgSpecs.height}
-                    sizes="(max-width: 100%)"
                 />
             </figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
                 <p>{text}</p>
-                {buttonText && 
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">{buttonText}</button>
+                    {children}
                 </div>
-                }
             </div>
         </div>
     );
 };
 
-export default DaisyCard;
+export default Card;

@@ -1,9 +1,10 @@
 import { Fragment } from "react";
-import FadeInWhenVisible from "@/components/animations/fadeInWhenVisible";
+import FadeInWhenVisible from "@/motions/fadeInWhenVisible/fadeInWhenVisible";
+import Hero from "@/components/hero/hero";
 
-import Carousel from "@/components/carousel/carousel";
-import Hero from "@/components/hero";
 import Image from "next/image";
+import Card from "@/components/card/card";
+import Link from "next/link";
 
 // Image array
 const imageArray = [
@@ -30,17 +31,17 @@ const imageArray = [
     }
 ];
 
-export default function Home() {
+const Home = () => {
     return (
-        <Fragment>
-            <Hero flex="flex-col" imgurl="/studying-girl.webp">
+        <div className="max-w-[100vw]">
+            <Hero flex="flex-col" imgurl="/studying-girl.webp" className="text-neutral-content">
                 <FadeInWhenVisible>
-                <h1 className="text-4xl lg:text-8xl text-base-200">Hello There!</h1>
-                <p className="text-center text-base-200">Welcome back</p>
+                    <h1 className="text-4xl lg:text-8xl font-bold">Hello <span className="text-error">There</span></h1>
+                    <h3 className="text-xl lg:text-2xl text-center">Welcome back</h3>
                 </FadeInWhenVisible>
             </Hero>
             <Hero
-                className="px-1 md:px-3 lg:px-5 py-1 md:py-3 lg:py-5 bg-gradient-to-br from-pink-600 from-10% to-slate-950 to-90% h-[48rem]"
+                className="px-1 md:px-3 lg:px-5 py-1 md:py-3 lg:py-5 bg-base-300 h-[40rem]"
             >
                 <Image
                     alt="some picture"
@@ -50,8 +51,8 @@ export default function Home() {
                     className="rounded-lg shadow-2xl"
                 />
                 <FadeInWhenVisible>
-                    <h1 className="text-5xl font-bold text-right text-base-200">About</h1>
-                    <p className="py-6 text-right text-base-200">
+                    <h1 className="text-3xl lg:text-5xl font-bold text-right text-base-content">About <span className="text-primary">Me</span></h1>
+                    <p className="py-3 lg:py-6 text-right text-base-content">
                         I am a passionate 4th year computer science student at the University of Warwick,
                         exploring the realms of technology and innovation. By exploring, I mean trying out
                         new stuff which I find interesting. As you can probably already tell, the first sentence
@@ -60,12 +61,12 @@ export default function Home() {
                 </FadeInWhenVisible>
             </Hero>
             <Hero
-                className="px-1 md:px-3 lg:px-5 py-1 md:py-3 lg:py-5 bg-gradient-to-bl from-teal-500 from-10% to-slate-950 to-90% h-[48rem]"
+                className="px-1 md:px-3 lg:px-5 py-1 md:py-3 lg:py-5 bg-neutral h-[40rem]"
             >
                 <FadeInWhenVisible>
-                    <h1 className="text-5xl font-bold text-base-200">Content</h1>
-                    <p className="py-6 text-base-200">
-                        I post my personal projects and notes here. 
+                    <h1 className="text-3xl lg:text-5xl font-bold text-neutral-content">My <span className="text-secondary">Content</span></h1>
+                    <p className="py-3 lg:py-6 text-neutral-content">
+                        I post my personal projects and notes here.
                         I experiment with different frontend and backend features here as well.
                     </p>
                 </FadeInWhenVisible>
@@ -79,14 +80,15 @@ export default function Home() {
             </Hero>
             <Hero
                 flex="flex-col"
-                className="px-1 md:px-3 lg:px-5 py-1 md:py-3 lg:py-5 bg-gradient-to-br from-cyan-400 from-10% to-slate-950 to-90% h-[48rem]"
+                className="px-1 md:px-3 lg:px-5 py-1 md:py-3 lg:py-5 bg-base-300 max-h-fit"
             >
                 <FadeInWhenVisible>
-                    <h1 className="text-5xl font-bold text-center text-base-200">Where to begin?</h1>
-                    <p className="py-6 text-base-200">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <h1 className="text-3xl lg:text-5xl font-bold text-center text-base-content">Where to begin?</h1>
+                    <p className="py-3 lg:py-6 text-base-content">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                 </FadeInWhenVisible>
-                <Carousel isLinked={true} height="h-96" carouselItems={imageArray} />
             </Hero>
-        </Fragment>
+        </div>
     );
 };
+
+export default Home;
