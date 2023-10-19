@@ -62,7 +62,7 @@ const Home = () => {
             <Hero
                 className="px-1 md:px-3 lg:px-5 py-1 md:py-3 lg:py-5 bg-neutral h-[40rem]"
             >
-                <FadeInWhenVisible>å
+                <FadeInWhenVisible>
                     <h1 className="text-4xl lg:text-5xl font-bold text-center lg:text-left text-neutral-content">My <span className="text-secondary">Content</span></h1>
                     <p className="py-3 lg:py-6 text-center lg:text-left text-neutral-content">
                         I post most of my personal projects and some notes here.
