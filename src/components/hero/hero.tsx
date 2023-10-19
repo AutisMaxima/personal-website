@@ -2,7 +2,7 @@ const Hero = ({
     imgurl,
     background,
     flex = "flex-col lg:flex-row",
-    className = "",
+    className = "min-h-screen",
     children
 }: {
     imgurl?: string,
@@ -24,7 +24,7 @@ const Hero = ({
 
     if (imgurl) {
         returnElement = (
-            <div style={{ backgroundImage: `url(${imgurl})` }} className={`hero min-h-screen ${className}`}>
+            <div style={{ backgroundImage: `url(${imgurl})` }} className={`hero ${className}`}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className={`hero-content ${flex}`}>
                     {children}
@@ -34,7 +34,7 @@ const Hero = ({
     }
     else if (background) {
         returnElement = (
-            <div className={`hero min-h-screen ${className}`}>
+            <div className={`hero ${className}`}>
                 {background}
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className={`hero-content ${flex}`}>

@@ -13,7 +13,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className="navbar bg-base-200">
+        <div className="navbar bg-base-100 sticky top-0 z-30 backdrop-blur bg-opacity-90">
             <div className="flex-none">
                 {/* <Link href="/" className="btn btn-square btn-ghost">
                     <HomeIcon className="w-6 h-6 text-base-content" />
@@ -24,20 +24,20 @@ const Navbar = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-sm lg:menu-md dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base-content">
                         <li>
-                            <a>
+                            <Link href="/projects">
                                 <span><Cog6ToothIcon className = "w-6 h-6 text-base-content"/></span><span>Projects</span>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a>
+                            <Link href="/notes">
                                 <span><PencilSquareIcon className = "w-6 h-6 text-base-content" /></span><span>Notes</span>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>                    
             </div>
             <div className="flex-1">
-                <a className="btn btn-ghost normal-case text-lg text-base-content font-bold">daisyUI</a>
+                <Link href="/" className="btn btn-ghost normal-case text-lg text-base-content font-bold">Home</Link>
             </div>
             <div className="flex justify-end flex-1 px-2">
                 <div className="flex items-stretch">
