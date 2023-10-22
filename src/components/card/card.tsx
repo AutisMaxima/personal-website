@@ -1,17 +1,17 @@
 import Image from "next/image";
 
 const Card = ({
-    key = Math.round(Math.random()*1000),
+    key = Math.round(Math.random() * 1000),
     title = "Some title",
     text = "Some text",
     imgSpecs,
     className,
     children
-} : {
+}: {
     key?: number,
     title: string,
     text: string,
-    imgSpecs: {
+    imgSpecs?: {
         src: string,
         alt: string,
         width: number,
@@ -22,14 +22,14 @@ const Card = ({
 }) => {
     return (
         <div key={key} className={`card flex-auto h-96 w-96 bg-base-100 shadow-xl text-base-content ${className}`}>
-            <figure>
+            {imgSpecs && <figure>
                 <Image
                     src={imgSpecs.src}
                     alt={imgSpecs.alt}
                     width={imgSpecs.width}
                     height={imgSpecs.height}
                 />
-            </figure>
+            </figure>}
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
                 <p>{text}</p>
