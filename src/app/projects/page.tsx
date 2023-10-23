@@ -3,29 +3,40 @@ import Link from 'next/link';
 
 const Projects = () => {
     return (
-        // <>
-        //     <Hero className="min-h-screen bg-base-300">
-        //         <h1 className="text-center text-base-content font-semibold text-2xl lg:text-4xl">There are currently <span className="text-error">no</span> projects!</h1>
-        //     </Hero>
-        // </>
         <div className="mx-[10%] min-h-screen">
             <div className="my-[2.5%]"><h3 className="text-xl md:text-2xl lg:text-3xl text-emphasis text-base-content">Machine learning</h3></div>
             <div className="divider mb-[4%] text-base-content"></div>
 
-            {/** New Cards */}
-            <div className="card card-normal min-h-fit bg-base-100 shadow-xl">
+            {/** Address Standardisation */}
+            <div className="card card-normal min-h-fit bg-base-100 shadow-xl mb-[4%]">
                 <div className="card-body">
-                    <h2 className="card-title text-base-content">
+                    <h2 className="card-title text-base-content text-base md:text-lg lg:text-xl">
                         Address Standardisation on a flawed dataset
-                        <div className="badge badge-secondary">NLP</div>
                     </h2>
 
-                    <p className="text-base-content">If a dog chews shoes whose shoes does he choose?</p>
+                    <p className="text-base-content text-sm md:text-base lg:text-lg">Implementing the T5 sequence-to-sequence model on an imperfect dataset of Indonesian Addresses.</p>
                     <div className="card-actions justify-end text-primary-content">
                         <Link href="https://github.com/AutisMaxima/Address-Standardisation" className="btn btn-primary">GitHub</Link>
                     </div>
                 </div>
             </div>
+
+            {/** Accent Recognition  */}
+            <div className="card card-normal min-h-fit bg-base-100 shadow-xl mb-[4%]">
+                <div className="card-body">
+                    <h2 className="card-title text-base-content text-base md:text-lg lg:text-xl">
+                        Speaker Accent Recognition
+                    </h2>
+
+                    <p className="text-base-content text-sm md:text-base lg:text-lg">Investigating linear seperability on a dataset of accents with various techniques such as PCA and kernels.</p>
+                    <div className="card-actions justify-end text-primary-content">
+                        <Link href="https://github.com/AutisMaxima/accent-recognition" className="btn btn-primary">GitHub</Link>
+                    </div>
+                </div>
+            </div>
+
+            <div className="my-[2.5%]"><h3 className="text-xl md:text-2xl lg:text-3xl text-emphasis text-base-content">C++</h3></div>
+            <div className="divider mb-[4%] text-base-content"></div>
         </div>
     );
 };

@@ -18,6 +18,14 @@ const ParticleBackground = () => {
         enable: false,
         zIndex: -1
       },
+      responsive: [{
+        maxWidth: 500,
+        options: {
+          particles: {
+            number: {limit: 20},
+          },
+        }
+      }]
   };
 
   return (

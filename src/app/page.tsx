@@ -42,7 +42,7 @@ const Home = () => {
                 </FadeInWhenVisible>
             </Hero>
             <Hero
-                className="px-1 md:px-3 lg:px-5 py-1 md:py-3 lg:py-5 bg-base-300 h-[40rem]"
+                className="px-1 md:px-3 lg:px-5 py-1 md:py-3 lg:py-5 bg-base-300 min-h-[40rem]"
             >
                 <LottieComponent
                     animationData={Person}
@@ -60,7 +60,7 @@ const Home = () => {
                 </FadeInWhenVisible>
             </Hero>
             <Hero
-                className="px-1 md:px-3 lg:px-5 py-1 md:py-3 lg:py-5 bg-neutral h-[40rem]"
+                className="px-1 md:px-3 lg:px-5 py-1 md:py-3 lg:py-5 bg-neutral min-h-[40rem]"
             >
                 <FadeInWhenVisible>
                     <h1 className="text-4xl lg:text-5xl font-bold text-center lg:text-left text-neutral-content">My <span className="text-secondary">Content</span></h1>
