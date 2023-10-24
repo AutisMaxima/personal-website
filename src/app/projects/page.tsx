@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
+import CloudIcon from '@heroicons/react/20/solid/esm/CloudIcon';
+
 const Projects = () => {
     return (
         <div className="mx-[10%] min-h-screen">
@@ -16,7 +18,10 @@ const Projects = () => {
 
                     <p className="text-base-content text-sm md:text-base lg:text-lg">Implementing the T5 sequence-to-sequence model on an imperfect dataset of Indonesian Addresses.</p>
                     <div className="card-actions justify-end text-primary-content">
-                        <Link href="https://github.com/AutisMaxima/Address-Standardisation" className="btn btn-primary">GitHub</Link>
+                        <Link href="https://github.com/AutisMaxima/Address-Standardisation" className="btn btn-primary btn-sm md:btn-md lg:btn-lg">
+                            <span><CloudIcon className="w-6 h-6" /></span>
+                            <span>GitHub</span>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -30,7 +35,10 @@ const Projects = () => {
 
                     <p className="text-base-content text-sm md:text-base lg:text-lg">Investigating linear seperability on a dataset of accents with various techniques such as PCA and kernels.</p>
                     <div className="card-actions justify-end text-primary-content">
-                        <Link href="https://github.com/AutisMaxima/accent-recognition" className="btn btn-primary">GitHub</Link>
+                        <Link href="https://github.com/AutisMaxima/accent-recognition" className="btn btn-primary btn-sm md:btn-md lg:btn-lg">
+                            <span><CloudIcon className="w-6 h-6" /></span>
+                            <span>GitHub</span>
+                        </Link>
                     </div>
                 </div>
             </div>
