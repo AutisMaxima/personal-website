@@ -14,11 +14,12 @@ const LottieComponent = (
     }
 ) => {
     return (
-        <Lottie
-            animationData={animationData}
-            className={className}
-            loop={loop}
-        />
+        <div className={className}>
+            <Lottie
+                animationData={animationData}
+                loop={loop}
+            />
+        </div>
     );
 };
 

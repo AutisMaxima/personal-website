@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { themeChange } from 'theme-change';
-import { HomeIcon, Cog6ToothIcon, PencilSquareIcon } from '@heroicons/react/24/outline';
+import { Cog6ToothIcon, PencilSquareIcon, Bars3Icon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -20,7 +20,7 @@ const Navbar = () => {
                 </Link> */}
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost btn-circle">
-                        <HomeIcon className="w-6 h-6 text-base-content" />
+                        <Bars3Icon className="w-6 h-6 text-base-content" />
                     </label>
                     <ul tabIndex={0} className="menu menu-sm lg:menu-md dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base-content">
                         <li>
