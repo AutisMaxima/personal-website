@@ -1,15 +1,12 @@
 'use client'
 
-import FadeInWhenVisible from "@/motions/fadeInWhenVisible/fadeInWhenVisible";
-import Hero from "@/components/Hero/Hero";
-import ParticleBackground from "@/components/Particles/ParticlesBackground/ParticlesBackground";
-import LottieComponent from "@/components/LottieComponent/LottieComponent";
+import FadeInWhenVisible from "../motions/fadeInWhenVisible/fadeInWhenVisible";
+import Hero from "../components/Hero/Hero";
+import ParticleBackground from "../components/Particles/ParticlesBackground/ParticlesBackground";
+import LottieComponent from "../components/LottieComponent/LottieComponent";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 
-
-import FolderIcon from "@heroicons/react/20/solid/esm/FolderIcon";
 import Person from "../assets/person.json";
 import Content from "../assets/content.json";
 
