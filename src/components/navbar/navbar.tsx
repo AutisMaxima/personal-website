@@ -15,9 +15,6 @@ const Navbar = () => {
     return (
         <div className="navbar bg-base-100 sticky top-0 z-30 backdrop-blur bg-opacity-90">
             <div className="flex-none">
-                {/* <Link href="/" className="btn btn-square btn-ghost">
-                    <HomeIcon className="w-6 h-6 text-base-content" />
-                </Link> */}
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost btn-circle">
                         <Bars3Icon className="w-6 h-6 text-base-content" />
