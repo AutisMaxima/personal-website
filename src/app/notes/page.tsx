@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero/hero";
+import Hero from "@/components/Hero/Hero";
 
 const Notes = () => {
     return (

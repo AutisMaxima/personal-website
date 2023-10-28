@@ -1,9 +1,9 @@
 'use client'
 
 import FadeInWhenVisible from "../motions/fadeInWhenVisible/fadeInWhenVisible";
-import Hero from "../components/Hero/hero";
-import ParticleBackground from "../components/Particles/ParticlesBackground/particlesBackground";
-import LottieComponent from "../components/LottieComponent/lottieComponent";
+import Hero from "../components/Hero/Hero";
+import ParticleBackground from "../components/Particles/ParticlesBackground/ParticlesBackground";
+import LottieComponent from "../components/LottieComponent/LottieComponent";
 
 import { motion } from "framer-motion";
 
