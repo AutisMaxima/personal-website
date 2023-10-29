@@ -56,7 +56,7 @@ const Projects = () => {
 
                     <p className="text-base-content text-sm md:text-base lg:text-lg">LL1 Parser for a subset of the C language that is extendable to a full compiler in LLVM.</p>
                     <div className="card-actions justify-end text-primary-content">
-                        <Link href="https://github.com/AutisMaxima/accent-recognition" className="btn btn-primary btn-sm md:btn-md lg:btn-lg">
+                        <Link href="https://github.com/AutisMaxima/parser" className="btn btn-primary btn-sm md:btn-md lg:btn-lg">
                             <span><Github className="w-6 h-6" /></span>
                             <span>GitHub</span>
                         </Link>
@@ -78,7 +78,7 @@ const Projects = () => {
 
                     <p className="text-base-content text-sm md:text-base lg:text-lg">A discord bot that insults your friends, displays weather of different cities, and finds comics.</p>
                     <div className="card-actions justify-end text-primary-content">
-                        <Link href="https://github.com/AutisMaxima/accent-recognition" className="btn btn-primary btn-sm md:btn-md lg:btn-lg">
+                        <Link href="https://github.com/AutisMaxima/DiscordBot" className="btn btn-primary btn-sm md:btn-md lg:btn-lg">
                             <span><Github className="w-6 h-6" /></span>
                             <span>GitHub</span>
                         </Link>
